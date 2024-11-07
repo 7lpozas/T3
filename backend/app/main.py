@@ -14,7 +14,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173", "https://*.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -114,6 +114,6 @@ async def force_index_creation():
         logger.error(f"Error creating index: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error creating index: {str(e)}")
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+#if __name__ == "__main__":
+ #   import uvicorn
+  #  uvicorn.run(app, host="0.0.0.0", port=8000)
