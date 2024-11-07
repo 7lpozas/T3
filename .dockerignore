@@ -1,0 +1,11 @@
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.git
+.env
+venv
+*.log
+backend/app/faiss_index/*
+backend/app/processed_scripts/*
+backend/app/scripts/*
