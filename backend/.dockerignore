@@ -1,0 +1,19 @@
+# Ignorar archivos y directorios comunes
+__pycache__
+*.pyc
+.env
+.DS_Store
+.git
+.gitignore
+
+# No ignorar archivos y directorios específicos que necesitamos en la imagen
+!app/
+!faiss_index/
+!processed_scripts/
+!scripts/
+!embeddings.pkl
+!requirements.txt
+
+# Asegurarse de incluir los archivos específicos de FAISS
+!faiss_index/index.faiss
+!faiss_index/index.pkl
