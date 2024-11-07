@@ -11,3 +11,4 @@ beautifulsoup4==4.10.0
 requests==2.26.0
 tenacity==8.5.0
 numpy==1.26.4
+langchain-community==0.3.5
